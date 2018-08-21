@@ -6,34 +6,36 @@ ID-3
 The early identification of language usage will have strong influence on language concepts. Precisly identify and describe usage of a domain specific language. Usages of a DSL in real world production scenarios are an important source of knowledge to support decisions in language design and implementation. 
 ID-135
 ##Use end-user personas  
-
+The specification of needs of end-users in form of personas helps to reduce the distance to potential end-users. The use of personas are 
+a good mean to keep focused on the professional requirements and tasks of end-users not only during analysis phase but throughout the whole dsm project.
 ID-134
 ##Perform expert review 
-description
+Ask usability experts for advice and apply heuristic review evaluation. In a heuristic evaluation, usability experts review interaction with the language and tooling and compare it to accepted usability principles.
 ID-79
 ##Do not overestimate domain experts 
-description
+Do not expect the domain experts to know what the computer can (should) do for them; do not expect them to understand what it cannot possibly do for them! DSL designers need to aquire domain expertise by themselve.
 ID-4
 ##Understand present solution 
-description
+Understand the design of the present solution. This will allow to focus on the needed scope of a language and helps to mitigate the risk to over-design languages.
 ID-6
 ##Balance genericity and specialization 
-description
+Find the right balance between genericity and specialization. Developers often create a language that is too generic. A generic language
+design and language concepts may facilitate reusability of a language and make it more robust to changing requirements. However, beware of reusing general purpose modeling languages. Adaptations for your special case will be necessary and your end-users must deal with complex language designs.
 ID-5
 ##Reuse language definitions 
-description
+If suitable language exists try to reuse the language, do not reinvent the wheel! Sometimes existing language definitions can also be a goood starting point. Most of the time is better to take what is already their than creating one from scratch.
 ID-7
 ##Adopt existing domain notations 
-description
+An curical step during requirment analysis is to learn how domain experts articulate and present problem and solution domain. Adopt exisiting notations (e.g. from domain experts, software, documentation). Inventing a new concrete syntax will raise the threshold for domain experts to pick up your language.
 ID-9
 ##Support model reuse on language level 
-description
+Provide mechanisms that support reuse of models on language level. References between models, modularization or library concepts are a good starting point.
 ID-8
 ##Design must have purpose 
-description
+All features of a language should support a purpose. The purpose of the language must be closely aligned with buisness needs.
 ID-16
 ##Design for language evolution 
-description
+It is thus essential to allow extending the language at any time. Compilation to a target language like Java from a DSL and to generate end-user support for Utilize tool support to facilitate model evolution. Define what a “compatible” model change is and ensure all dependent designs follow this same model. Evolution. Need for language evolution. Minimize DSL changes which break existing models. Proactively manage language evolution. Do not postpone addition and extension of language concepts.
 ID-10
 ##Carefully choose form of notation 
 description
