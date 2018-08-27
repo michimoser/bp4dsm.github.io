@@ -1,9 +1,9 @@
 ID-2
 ##Define domain scope 
-Define the appropriate domain scope of your solution. The scope of a DSM solution should be closley alined with business needs.
+Define the appropriate domain scope of your solution. The scope of a DSM solution should be closely alined with business needs.
 ID-3
 ##Identify DSL usage 
-The early identification of language usage will have strong influence on language concepts. Precisly identify and describe usage of a domain specific language. Usages of a DSL in real world production scenarios are an important source of knowledge to support decisions in language design and implementation. 
+The early identification of language usage will have strong influence on language concepts. Precisely identify and describe usage of a domain specific language. Usages of a DSL in real world production scenarios are an important source of knowledge to support decisions in language design and implementation. 
 ID-135
 ##Use end-user personas  
 The specification of needs of end-users in form of personas helps to reduce the distance to potential end-users. The use of personas are 
@@ -13,7 +13,7 @@ ID-134
 Ask usability experts for advice and apply heuristic review evaluation. In a heuristic evaluation, usability experts review interaction with the language and tooling and compare it to accepted usability principles.
 ID-79
 ##Do not overestimate domain experts 
-Do not expect the domain experts to know what the computer can (should) do for them; do not expect them to understand what it cannot possibly do for them! DSL designers need to aquire domain expertise by themselve.
+Do not expect the domain experts to know what the computer can (should) do for them; do not expect them to understand what it cannot possibly do for them! DSL designers need to aquire domain expertise by themself.
 ID-4
 ##Understand present solution 
 Understand the design of the present solution. This will allow to focus on the needed scope of a language and helps to mitigate the risk to over-design languages.
@@ -23,28 +23,28 @@ Find the right balance between genericity and specialization. Developers often c
 design and language concepts may facilitate reusability of a language and make it more robust to changing requirements. However, beware of reusing general purpose modeling languages. Adaptations for your special case will be necessary and your end-users must deal with complex language designs.
 ID-5
 ##Reuse language definitions 
-If suitable language exists try to reuse the language, do not reinvent the wheel! Sometimes existing language definitions can also be a goood starting point. Most of the time is better to take what is already their than creating one from scratch.
+If suitable language exists try to reuse the language, do not reinvent the wheel! Sometimes existing language definitions can also be a good starting point. Most of the time is better to take what is already their than creating one from scratch.
 ID-7
 ##Adopt existing domain notations 
-An curical step during requirment analysis is to learn how domain experts articulate and present problem and solution domain. Adopt exisiting notations (e.g. from domain experts, software, documentation). Inventing a new concrete syntax will raise the threshold for domain experts to pick up your language.
+A crucial step during requirement analysis is to learn how domain experts articulate and present problem and solution domain. Adopt existing notations (e.g. from domain experts, software, documentation). Inventing a new concrete syntax will raise the threshold for domain experts to pick up your language.
 ID-9
 ##Support model reuse on language level 
 Provide mechanisms that support reuse of models on language level. References between models, modularization or library concepts are a good starting point.
 ID-8
 ##Design must have purpose 
-All features of a language should support a purpose. The purpose of the language must be closely aligned with buisness needs.
+All features of a language should support a purpose. The purpose of the language must be closely aligned with business needs.
 ID-16
 ##Design for language evolution 
 It is thus essential to allow extending the language at any time. Compilation to a target language like Java from a DSL and to generate end-user support for Utilize tool support to facilitate model evolution. Define what a “compatible” model change is and ensure all dependent designs follow this same model. Evolution. Need for language evolution. Minimize DSL changes which break existing models. Proactively manage language evolution. Do not postpone addition and extension of language concepts.
 ID-10
 ##Carefully choose form of notation 
-Often the choice for a certain type of notation (e.g. textual, graphical, tabular) is pretermined by experiences and expectations of different stackholders. E.g. software engineers may favor a textual notation, or engineers in industrial automation expect graphical notations to create models. These decisions are often biased and should be questioned.
+Often the choice for a certain type of notation (e.g. textual, graphical, tabular) is predetermined by experiences and expectations of different stakeholders. E.g. software engineers may favor a textual notation, or engineers in industrial automation expect graphical notations to create models. These decisions are often biased and should be questioned.
 ID-13
 ##Avoid redundancy 
 Avoid redundancy on a conceptual level. Redundancy is a constant source of problem. Having several concepts at hand gives users the possibility to create different models to describe the same fact.
 ID-15
 ##Viewpoint orientation 
-Identify different viewpoints on a software system. This may influence hwo you modularize a DSL. Different concerns of stakeholders can be seperated by using a viewpoint oriented approach. Moreover, the identified viewpoints can help to structure implementation. See <a href=#49>viewpoint aware processing</a>.
+Identify different viewpoints on a software system. This may influence hwo you modularize a DSL. Different concerns of stakeholders can be separated by using a viewpoint oriented approach. Moreover, the identified viewpoints can help to structure implementation. See <a href=#49>viewpoint aware processing</a>.
 
 ID-28
 ##Provide Integrability 
@@ -55,16 +55,16 @@ ID-14
 In graphical languages different elements should exhibit enough syntactic differences. There are more possibilities than changing the color of elements (e.g. shape, behavior, docking).
 ID-22
 ##Consistent style everywhere 
-Be consitent on language elements. In graphical languages a consitent use of color, icons, shapes, or connectability has a huge impact on usability of a language.
+Be consistent on language elements. In graphical languages a consistent use of color, icons, shapes, or connectability has a huge impact on usability of a language.
 ID-18
 ##Limit nr. of language elements 
 Languages with hundreds of different language elements are hard to read, comprehend and to use. Try to avoid this by creating new sub-languages providing functionality via library mechanisms.
 ID-171
 ##Support variability on language level 
-Drive your language design by focusing on variabilities. Provide mechanisms which handle variability on language level. Rather that having seperate elements for representing variants, core language concepts should be designed to handle variabilities.
+Drive your language design by focusing on variabilities. Provide mechanisms which handle variability on language level. Rather that having separate elements for representing variants, core language concepts should be designed to handle variabilities.
 ID-11
 ##Reuse type systems 
-Designing a type system can be hard. Therefore, if possible reuse existing type system semantic. This not only eases language design but to asure comprehensibility and avoid errors. An unconventional type system may be hard to adpot for users which have been exposed to conventional type system in other languages.
+Designing a type system can be hard. Therefore, if possible reuse existing type system semantic. This not only eases language design but to assure comprehensibility and avoid errors. An unconventional type system may be hard to adpot for users which have been exposed to conventional type system in other languages.
 ID-12
 ##Keep it simple 
 Keep a language simple. A language should be as simple as possible in order to express the concepts of interest and to support its users and stakeholders in their preferred ways of working. So again, keep it simple!
@@ -76,16 +76,16 @@ ID-30
 Care for quality on all levels. Quality of the provided language, DSML tool support and the target systems which built using your DSM solution.
 ID-136
 ##Perform usability evaluations 
-Usability evaluations provide valuable feedback for the design of both the notation as well as the tool interaction. Usability evaluations during early project phases provide have a strong influence on the design of a language. Use techniques like paper prototypes to perform evaluations if no runnable software is availabel.
+Usability evaluations provide valuable feedback for the design of both the notation as well as the tool interaction. Usability evaluations during early project phases provide have a strong influence on the design of a language. Use techniques like paper prototypes to perform evaluations if no runnable software is available.
 ID-172
 ##Create guidelines for language definition 
-Guidlines are important and help new project members to adopt a proofen development process. Guideline may support a wide range of development activities from naming and styling of elements, over application of best practice, to documentation issues.
+Guidelines are important and help new project members to adopt a proven development process. Guideline may support a wide range of development activities from naming and styling of elements, over application of best practice, to documentation issues.
 ID-173
 ##Define language rules 
-Define language usage rules and commuicate thes rules to your users. Provide automatic consistency checks for rules, constraints.
+Define language usage rules and communicate these rules to your users. Provide automatic consistency checks for rules, constraints.
 
 ID-165
-##Derive concepts from physical sturcture 
+##Derive concepts from physical structure 
 Derive language concepts and presentation from the physical structures of the real world objects the represent.
 
 ID-166
@@ -108,7 +108,7 @@ ID-170
 Reuse existing computational models.
 ID-21
 ##Balance compactness and understandability 
-Finding a good balance between compactness and understandability is an important property of a language. Comprehensibility may be provided by precise nameing and representations. However, restrain the language of being to verbose.
+Finding a good balance between compactness and understandability is an important property of a language. Comprehensibility may be provided by precise naming and representations. However, restrain the language of being to verbose.
 ID-23
 ##Interface concept 
 DSLs should provide an interface concept similar to interfaces as known from programming languages.
@@ -132,7 +132,7 @@ ID-128
 There should be a clear mapping of the language concepts to the concepts of relevant target representations. It should be understandable and traceable how language concepts transform into target representations.
 ID-25
 ##Turn API into DSL 
-Turn an exisiting API into a DSL. If necessary, add a user-friendly notation to an exisiting API. This practice somehow contradicts with <a href=#49>a library is not a language</a>.
+Turn an existing API into a DSL. If necessary, add a user-friendly notation to an existing API. This practice somehow contradicts with <a href=#49>a library is not a language</a>.
 
 ID-26
 ##Strive for 80% solution 
@@ -175,28 +175,28 @@ ID-20
 The usage of syntactic sugar is important and can help to improve readability and domain specifity of a language. However, beware to distract end-user by overuse of syntactic sugar.
 ID-24
 ##Transform visual to text 
-Consider the transformation of of existing visual notations to textual noations. This may improve composition and compactness of models.
+Consider the transformation of of existing visual notations to textual notations. This may improve composition and compactness of models.
 ID-27
-##Use mixtuer of language notations 
+##Use mixture of language notations 
 Sometimes it is not only one kind of notation that is needed to express domain expertise. Consider using a mix of language notations to facilitate different requirements (e.g. a graphical notation for element composition and a textual notation for constraint definition).
 ID-35
 ##Importance of meta-tooling 
 The benefits of using language workbenches to create a DSL is reported by many. Effective meta-tools lead to faster, better and cheaper DSML development.
 ID-36
 ##Importance of DSL-tooling 
-Usage of a DSL must be supported by effictive tool support. Any language, no matter how good, benefits from strong tool support. Good tool support facilitates understandability, learnability, readability, writeability and maintainability of dsm models.
+Usage of a DSL must be supported by effective tool support. Any language, no matter how good, benefits from strong tool support. Good tool support facilitates understandability, learnability, readability, writeability and maintainability of dsm models.
 ID-186
-##Use generators of varing granularity 
+##Use generators of varying granularity 
 Provide generators of varying granularity. Generators may be provided for each modeling language, file type, or object type.
 ID-72
 ##Incremental development 
-Benefits of incremental development are in particular important for the development of domain-specific solutions. Incrementially expand the feature set of a DSML solution allows to integrate feedback from domain experts and adapt design decisions at an early stage of product development. 
+Benefits of incremental development are in particular important for the development of domain-specific solutions. Incrementally  expand the feature set of a DSML solution allows to integrate feedback from domain experts and adapt design decisions at an early stage of product development. 
 ID-37
 ##Partition your meta-model 
 Structure the overall meta-model into different model units. This eases language implementation and supports modularization of language models.
 ID-45
 ##Don't modify generated code 
-A general adivce from generative development approaches (e.g. model-driven software development), which is true for domain-specific modeling as well. Do not modify generated code. If manual adaptation is required, provide designs and architectures that support integration of generated and manually created code.
+A general advice from generative development approaches (e.g. model-driven software development), which is true for domain-specific modeling as well. Do not modify generated code. If manual adaptation is required, provide designs and architectures that support integration of generated and manually created code.
 ID-51
 ##Simplify generators 
 description
@@ -529,13 +529,13 @@ ID-130
 description
 ID-74
 ##Provide training 
-description
+Even if a DSL uses domain concepts and is intuitive to use, users must be trained. It is a worst practice in DSM to not train end-users in using a DSL and the provided DSL tooling during introductory phases of a project.
 ID-77
 ##Understand and deal with your weaknesses  
-description
+A general advice which is even more true for DSL development; Analyse the problems and errors you encounter and make a plan to deal with those problems.
 ID-80
 ##Users do not overlook your mistakes 
-description
+Do not expect users to settle with weak and confusing designs. Especially, if promise is given that it will be "cleaned up in the final version". Provide a process that assures that shortcomings are resolved.
 ID-182
 ##Use tooling for model evolution 
 description
@@ -544,34 +544,35 @@ ID-201
 description
 ID-123
 ##Expect redesign and plan 
-description
+Take major redesign of a language into account and plan for it. Leave explicit time slots in project schedules for redesign of languages, generators and generated code.
 ID-71
 ##Domain engineering team 
-Consitute a team of domain engineers, domain experts, domain developers and language engineers. A good mix of expertise, e.g. from language engineering, domain engineering, domain knowledge, software engineering, or usability engineering leads to a specialized and dedicated team.
+Constitute a team of domain engineers, domain experts, domain developers and language engineers. A good mix of expertise, e.g. from language engineering, domain engineering, domain knowledge, software engineering, or usability engineering leads to a specialized and dedicated team.
 ID-75
 ##Iterative development 
-description
+The creation of languages is no waterfall process. Viewing the initial language version as unalterable is a bad habit. Iterative development with short iterations, clearly defined milestones, accessible deliverables, and frequent feedback from different stakeholders are a means to improve DMS development.
 ID-197
 ##DSM requires organization 
 description
 ID-76
 ##Treat DSM as product development 
-description
+Organize teams for DSM development as a product teams and domain user teams. The product teams develope languages, frameworks, and tooling. Domain teams apply the DSM solutions. Try to have short feedback loops from domain team to product teams. Even exchange people (i.e. domain experts) between teams from time to time.
 ID-69
-##Aquire language development expertise 
-description
+##Acquire language development expertise 
+Development of a DSL is a complex task and requires skilled experts in language engineering. For in-house DSML development consider hiring experts.
 ID-70
 ##Fit technology transfer to business model 
-description
+Assure that the required technology transfer of a DSM solution into cooperation infrastructure fits the cooperations business model. Minor problems during technology transfer in introductory phases can jeopardize overall acceptance of the DSM solution.
 ID-138
 ##Define cost-benefit of generator testing 
-description
+Different testing strategies for generators may substantially vary in effort. Make sure to provide test strategies which provide a good cost-benefit ratio. Try to use different testing strategies depending on your testing goals.
 ID-139
 ##Use fuzzy testing 
-Apply fuzzy testing to models. Approximately 10% of the randomly generated models reveal a defect of some kind.
+Apply fuzzy testing of models. Fuzzy testing proved to be a very effective means to synthesize valid models and to discover robustness defects. Approximately 10% of the randomly generated models reveal a defect of some kind.
 ID-140
 ##Measure test coverage 
-Measure test coverage for your solution.
+Measure test coverage for your DSM solution. As in general software development projects test coverage directs test development and reveals yet uncovered parts.
 ID-137
 ##Create DSLs for testing DSLs 
-description
+Create DSLs which are specifically designed for DSL testing. Effective ways for testing different language
+definition aspects (e.g. type system, checking rules) help to increase testing efficiency.
