@@ -1,3 +1,4 @@
+# Compilation of Best Practices in DSM  
 | ID | Name | Description | Phase | References |
 |----|------|-------------|-------|------------|
 |2|Define domain scope| Define the appropriate domain scope of your solution. The scope of a DSM solution should be closely alined with business needs.|Analysis|Reported by: <a href=#ref-3>[3] </a><a href=#ref-6>[6] </a><a href=#ref-11>[11] </a>|
