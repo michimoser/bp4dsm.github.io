@@ -255,13 +255,13 @@ ID-64
 Try to hide complexity in domain frameworks. This makes development of code generators more efficient and improves readability of the generated code.
 ID-176
 ##Provide user modes  
-Even though, Provide different users modes according to user experience
+Provide different user modes according to the experience of users. Modes may adapt tooling support and provide hints to novice users. Moreover, modes could be used to filter language concepts according to tasks users need to transform. 
 ID-38
-##Identify usage convention 
-description
+##Define usage convention 
+Not everything has to be enforced by language design. Try to define language usage conventions. This may produce simpler language designs and facilitate flexible language usage.
 ID-41
 ##Teamwork support 
-description
+Just like any other software development approach, DSM must care for teamwork support. Models written in a DSL must be versioned, tagged and evolved in a team setting. DSL tooling must facilitate team support.
 ID-44
 ##Check constraints first 
 description
@@ -272,7 +272,7 @@ ID-111
 ##Target-Specific Generator Classes 
 description
 ID-183
-##Turn DSM models into documenation 
+##Turn DSM models into documentation 
 description
 ID-184
 ##Integrate handwritten code on file level 
@@ -428,7 +428,7 @@ ID-39
 ##Syntax alignment of concepts 
 description
 ID-145
-##Sematic Model 
+##Semantic Model 
 description
 ID-154
 ##Regex Table Lexer 
