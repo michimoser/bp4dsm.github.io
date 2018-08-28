@@ -1,7 +1,6 @@
-#Compilation of Best Practices in DSM
 | ID | Name | Description | Phase | References |
 |----|------|-------------|-------|------------|
-|2|Define domain scope| Define the appropiate domain scope of your solution. The scope of a DSM solution should be closely alined with business needs.|Analysis|Reported by: <a href=#ref-3>[3] </a><a href=#ref-6>[6] </a><a href=#ref-11>[11] </a>|
+|2|Define domain scope| Define the appropriate domain scope of your solution. The scope of a DSM solution should be closely alined with business needs.|Analysis|Reported by: <a href=#ref-3>[3] </a><a href=#ref-6>[6] </a><a href=#ref-11>[11] </a>|
 |3|Identify DSL usage| The early identification of language usage will have strong influence on language concepts. Precisely identify and describe usage of a domain specific language. Usages of a DSL in real world production scenarios are an important source of knowledge to support decisions in language design and implementation. |Analysis|Reported by: <a href=#ref-1>[1] </a><a href=#ref-5>[5] </a>|
 |135|Use end-user personas| The specification of needs of end-users in form of personas helps to reduce the distance to potential end-users. The use of personas are  a good mean to keep focused on the professional requirements and tasks of end-users not only during analysis phase but throughout the whole dsm project.|Analysis|Reported by: <a href=#ref-16>[16] </a>|
 |134|Perform expert review| Ask usability experts for advice and apply heuristic review evaluation. In a heuristic evaluation, usability experts review interaction with the language and tooling and compare it to accepted usability principles.|Analysis|Reported by: <a href=#ref-16>[16] </a>|
