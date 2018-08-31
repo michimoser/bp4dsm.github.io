@@ -326,92 +326,92 @@ ID-66
 ##Avoid semi-automatic transformation 
 Semi-automatic transformations burden maintenance tasks. Strive for full transformations.
 ID-82
-##Mapping grammars to recursive-descent reco 
-description
+##Mapping grammars to recursive-descent recognizers 
+Translate a grammar to a recursive-descent recognizer. The recognizer matches phrases and sentences of the language specified by the grammar. Pattern describes the core framework for any recursive-descent parsing approach.
 ID-90
 ##Normalized Heterogeneous AST 
-description
+Trees with multiple different node types. The types of children within a node however are normalized, like in homogenous trees.
 ID-91
 ##Irregular Heterogeneous AST 
-description
+An abstract syntax tree (AST) with different node types. Nodes have irregular children, meaning children of any type.
 ID-92
 ##Embedded Heterogeneous Tree Walker 
-description
+This pattern applies to walking methods that execute actions on a node and walk any children. Simple pattern for walking trees. Beware: code to walk AST is scattered across many classes.
 ID-93
 ##External Tree Visitor 
-description
+This pattern encapsulated tree walking code into a single class. An external tree visitor allows to alter tree walking behavior.
 ID-94
 ##Tree Grammar 
-description
+A tree grammar describes the structure of a valid AST. Just as one can automate parser construction from grammars we can automate the construction of tree visitors.
 ID-95
 ##Tree Pattern Matcher 
-description
+This pattern is similar to tree grammars, but instead of specifying a grammar for the whole tree this pattern facilitates the specification of pattern matching for subtrees only.
 ID-96
 ##Symbol Table for Monolithic Scope 
-description
+Track symbols within a single scope. Apply this pattern for simple languages only.
 ID-97
 ##Symbol Table for Nested Scopes 
-description
+This pattern tracks symbols and tracks symbols within separate scopes. Build a scope tree for languages with multiple possibly nested scopes.
 ID-98
 ##Symbol Table for Data Aggregates 
-description
+This pattern tracks symbols and builds a scope tree for data aggregates such as C's structs.
 ID-99
 ##Symbol Table for Classes 
-description
+Tracks symbols and builds a scope tree for non-nested classes within single inheritance.
 ID-83
 ##LL(1) Recursive-Descent Lexer 
-description
+Create lexers that derive a stream of tokens from a character stream. The lexer recognizes lexical patterns by just reading one character ahead.
 ID-100
 ##Computing Static Expression Types 
-description
+Computes types for all expressions and expression elements. This pattern assumes that operands of an expression are of the same type.
 ID-101
 ##Automatic Type Promotion 
-description
+This pattern demonstrates how to handle operands to have the same or compatible type.
 ID-102
 ##Enforcing Static Type Safety 
-description
+When type information is statically available this pattern helps to statically enforce type safety by checking operand types and assignment type compatibility.
 ID-103
 ##Enforcing Polymorphic Type Safety 
-description
+If types in your language can be polymorph (i.e. references may point to multiple types) this patterns shows how to check for polymorphic type compatibility.
 ID-104
 ##Syntax-Directed Interpreter 
-description
+A pattern which consists of a parser that triggers interpreter actions during parsing.
 ID-105
 ##Tree-Based Interpreter 
-description
+This pattern shows how interpreter actions are executed while using a tree walker to traverse an abstract syntax tree.
 ID-106
 ##Bytecode Assembler 
-description
+To avoid having to program interpreters in binary, this pattern provides a bytecode assembler that translates human readable bytecode into machine code.
 ID-107
 ##Stack-Based Bytecode Interpreter 
-description
+This approach simulates a stack machine that holds all temporary variables on an operand stack.
 ID-108
 ##Register-Based Bytecode Interpreter 
-description
+An interpreter pattern that explains how to build register-based of values.
 ID-109
 ##Syntax-Directed Translator 
-description
+A translator that consists of a parser which uses embedded actions to directly generate output. No internal representation (IR) is created/needed when using this pattern.
 ID-84
 ##LL(1) Recursive-Descent Parser 
-description
+Analyze the syntactic structure of a token sequence by using a single lookahead token. To make parsing decisions the parser tests the current token against as set of alternative tokens.
 ID-110
 ##Rule-Based Translator 
-description
+Rule-based translations use specific DSL of rule engines to describe translation mappings.
 ID-85
 ##Backtracking Parser 
-description
+Use a backtracking parser to add a speculative parsing facility to recursive-descent parsers. Useful when it is hard to distinguish between alternatives.
 ID-86
 ##Memoizing Parser 
-description
+Use a memoizing parser to further improve speculative parsing performance at the cost of a small amount of memory.
 ID-87
 ##Predicated Parser 
-description
+Predicated parsers support to alter control-flow of a parser by using boolean expression (i.e. called semantic predicates).
 ID-88
 ##Parse Tree 
-description
+A parse tree records how a parser recognizes input sentences. Interior nodes of the tree are rule names, leave nodes are tokens. Less powerful than abstract syntax trees (AST), however, can be built automatically.
 ID-89
 ##Homogeneous AST 
-description
+An abstract syntax trees (AST) with only one node type. Often it's not the data types which are of importance, but the shape of the tree.
 ID-205
 ##Reuse mechanisms in metamodel 
 description

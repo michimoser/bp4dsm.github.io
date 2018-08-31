@@ -1771,6 +1771,441 @@ Implementation
 </div>
 
 <div class="row">
+<div class="bp-content" id="82">
+ <h2 class="bp-title">Mapping grammars to recursive-descent recognizers</h2>
+<p class="bp-description"> Translate a grammar to a recursive-descent recognizer. The recognizer matches phrases and sentences of the language specified by the grammar. Pattern describes the core framework for any recursive-descent parsing approach.</p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-10>[10] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="90">
+ <h2 class="bp-title">Normalized Heterogeneous AST</h2>
+<p class="bp-description"> Trees with multiple different node types. The types of children within a node however are normalized, like in homogenous trees.</p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-10>[10] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="91">
+ <h2 class="bp-title">Irregular Heterogeneous AST</h2>
+<p class="bp-description"> An abstract syntax tree (AST) with different node types. Nodes have irregular children, meaning children of any type.</p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-10>[10] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="92">
+ <h2 class="bp-title">Embedded Heterogeneous Tree Walker</h2>
+<p class="bp-description"> This pattern applies to walking methods that execute actions on a node and walk any children. Simple pattern for walking trees. Beware: code to walk AST is scattered across many classes.</p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-10>[10] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="93">
+ <h2 class="bp-title">External Tree Visitor</h2>
+<p class="bp-description"> This pattern encapsulated tree walking code into a single class. An external tree visitor allows to alter tree walking behavior.</p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-10>[10] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="94">
+ <h2 class="bp-title">Tree Grammar</h2>
+<p class="bp-description"> A tree grammar describes the structure of a valid AST. Just as one can automate parser construction from grammars we can automate the construction of tree visitors.</p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-10>[10] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="95">
+ <h2 class="bp-title">Tree Pattern Matcher</h2>
+<p class="bp-description"> This pattern is similar to tree grammars, but instead of specifying a grammar for the whole tree this pattern facilitates the specification of pattern matching for subtrees only.</p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-10>[10] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="96">
+ <h2 class="bp-title">Symbol Table for Monolithic Scope</h2>
+<p class="bp-description"> Track symbols within a single scope. Apply this pattern for simple languages only.</p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-10>[10] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="97">
+ <h2 class="bp-title">Symbol Table for Nested Scopes</h2>
+<p class="bp-description"> This pattern tracks symbols and tracks symbols within separate scopes. Build a scope tree for languages with multiple possibly nested scopes.</p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-10>[10] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="98">
+ <h2 class="bp-title">Symbol Table for Data Aggregates</h2>
+<p class="bp-description"> This pattern tracks symbols and builds a scope tree for data aggregates such as C's structs.</p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-10>[10] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="99">
+ <h2 class="bp-title">Symbol Table for Classes</h2>
+<p class="bp-description"> Tracks symbols and builds a scope tree for non-nested classes within single inheritance.</p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-10>[10] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="83">
+ <h2 class="bp-title">LL(1) Recursive-Descent Lexer</h2>
+<p class="bp-description"> Create lexers that derive a stream of tokens from a character stream. The lexer recognizes lexical patterns by just reading one character ahead.</p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-10>[10] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="100">
+ <h2 class="bp-title">Computing Static Expression Types</h2>
+<p class="bp-description"> Computes types for all expressions and expression elements. This pattern assumes that operands of an expression are of the same type.</p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-10>[10] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="101">
+ <h2 class="bp-title">Automatic Type Promotion</h2>
+<p class="bp-description"> This pattern demonstrates how to handle operands to have the same or compatible type.</p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-10>[10] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="102">
+ <h2 class="bp-title">Enforcing Static Type Safety</h2>
+<p class="bp-description"> When type information is statically available this pattern helps to statically enforce type safety by checking operand types and assignment type compatibility.</p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-10>[10] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="103">
+ <h2 class="bp-title">Enforcing Polymorphic Type Safety</h2>
+<p class="bp-description"> If types in your language can be polymorph (i.e. references may point to multiple types) this patterns shows how to check for polymorphic type compatibility.</p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-10>[10] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="104">
+ <h2 class="bp-title">Syntax-Directed Interpreter</h2>
+<p class="bp-description"> A pattern which consists of a parser that triggers interpreter actions during parsing.</p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-10>[10] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="105">
+ <h2 class="bp-title">Tree-Based Interpreter</h2>
+<p class="bp-description"> This pattern shows how interpreter actions are executed while using a tree walker to traverse an abstract syntax tree.</p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-10>[10] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="106">
+ <h2 class="bp-title">Bytecode Assembler</h2>
+<p class="bp-description"> To avoid having to program interpreters in binary, this pattern provides a bytecode assembler that translates human readable bytecode into machine code.</p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-10>[10] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="107">
+ <h2 class="bp-title">Stack-Based Bytecode Interpreter</h2>
+<p class="bp-description"> This approach simulates a stack machine that holds all temporary variables on an operand stack.</p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-10>[10] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="108">
+ <h2 class="bp-title">Register-Based Bytecode Interpreter</h2>
+<p class="bp-description"> An interpreter pattern that explains how to build register-based of values.</p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-10>[10] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="109">
+ <h2 class="bp-title">Syntax-Directed Translator</h2>
+<p class="bp-description"> A translator that consists of a parser which uses embedded actions to directly generate output. No internal representation (IR) is created/needed when using this pattern.</p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-10>[10] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="84">
+ <h2 class="bp-title">LL(1) Recursive-Descent Parser</h2>
+<p class="bp-description"> Analyze the syntactic structure of a token sequence by using a single lookahead token. To make parsing decisions the parser tests the current token against as set of alternative tokens.</p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-10>[10] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="110">
+ <h2 class="bp-title">Rule-Based Translator</h2>
+<p class="bp-description"> Rule-based translations use specific DSL of rule engines to describe translation mappings.</p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-10>[10] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="85">
+ <h2 class="bp-title">Backtracking Parser</h2>
+<p class="bp-description"> Use a backtracking parser to add a speculative parsing facility to recursive-descent parsers. Useful when it is hard to distinguish between alternatives.</p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-10>[10] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="86">
+ <h2 class="bp-title">Memoizing Parser</h2>
+<p class="bp-description"> Use a memoizing parser to further improve speculative parsing performance at the cost of a small amount of memory.</p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-10>[10] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="87">
+ <h2 class="bp-title">Predicated Parser</h2>
+<p class="bp-description"> Predicated parsers support to alter control-flow of a parser by using boolean expression (i.e. called semantic predicates).</p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-10>[10] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="88">
+ <h2 class="bp-title">Parse Tree</h2>
+<p class="bp-description"> A parse tree records how a parser recognizes input sentences. Interior nodes of the tree are rule names, leave nodes are tokens. Less powerful than abstract syntax trees (AST), however, can be built automatically.</p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-10>[10] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="89">
+ <h2 class="bp-title">Homogeneous AST</h2>
+<p class="bp-description"> An abstract syntax trees (AST) with only one node type. Often it's not the data types which are of importance, but the shape of the tree.</p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-10>[10] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
 <div class="bp-content" id="138">
  <h2 class="bp-title">Define cost-benefit of generator testing</h2>
 <p class="bp-description"> Different testing strategies for generators may substantially vary in effort. Make sure to provide test strategies which provide a good cost-benefit ratio. Try to use different testing strategies depending on your testing goals.</p>
