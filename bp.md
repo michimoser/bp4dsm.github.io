@@ -264,67 +264,67 @@ ID-41
 Just like any other software development approach, DSM must care for teamwork support. Models written in a DSL must be versioned, tagged and evolved in a team setting. DSL tooling must facilitate team support.
 ID-44
 ##Check constraints first 
-description
+Model validation will check constraints and report errors for violations. Try to check any inconsistencies in your model or input language as early as possible and treat errors as first class citizens. 
 ID-68
 ##Avoid debugging at source-code-level 
-description
+Provide debugging support on the model-level. Especially when the gap between code and models is big. Better to highlight and callback symbols in the model.
 ID-111
 ##Target-Specific Generator Classes 
-description
+This pattern describes a class library whose sole purpose is to represent and generate output constructs in a particular language.
 ID-183
 ##Turn DSM models into documentation 
-description
+In DSM the models itself form the best documentation of a system and DSM tooling provides the means to browse, query, and view models. However, not all stakeholders may have access to these resources and some users prefer to read documentation in traditional styles (e.g. paper, Word documents, or web-based documentation systems). With a DSM solution at hand it is fairly easy to turn models into various types of documentation, make use of it.
 ID-184
 ##Integrate handwritten code on file level 
-description
+If necessary integrate handwritten code on file levels. In the simplest cases, the generator then can output include or import statements in the generated code.
 ID-185
 ##Use autobuild for DSM models 
-description
+Automatically build models of your DSM solution and fully integrate generated output into the target application. If this process is not automated, developers have to do it manually, leads to errors and application which are not as often started and tested as they could.
 ID-189
-##Parallel generators per prog. langugage 
-description
+##Parallel generators per programming language 
+Provide generators per target programming language. If the same application needs to be generated in different programming languages, not only syntax of the target language but as well distribution over files and components may differ. Therefore, do not mix output languages within generators.
 ID-191
 ##One version for all 
-description
+Distribute and version your DSM solution as a whole. Therefore, generators, language and framework should provide the same version information.
 ID-193
-##Do not build generator to soon 
-description
+##Do not build generators to soon 
+Do not try to build generators too soon. Wait until you have a modeling language, and example model, and the correct output to be generated from that. This practice may contradict/interfer with the need to <a href="198">create proof of concepts to show benefits </a> 
 ID-114
 ##Generate all documents 
-description
+While we cannot force people to actually write good documentation or comprehensive tests, there is at least little excuse for not doing so. With a DSM solution at hand try to generate all documents needed (e.g. documentation templates, stubs for testing). 
 ID-122
 ##Stabilize design quickly 
-description
+Stabilize designs quickly and early; “simple” changes in modeling or generative steps can cause large amounts of downstream rework. However, others advice to apply an <a href=75>Iterative development</a> process.
 ID-119
 ##Modularize transformations 
-description
+Use intermediate models with multiple, modularized transform operations rather than writing large,complex tranformations. 
 ID-120
 ##Consistent input to transformations 
-description
+Avoid having separate model-dependent inputs to the transformations. Instead, incorporate feedback from the generator development into the modeling process.
 ID-42
 ##Interpretation vs. code generation 
-description
+Clearly deciding between interpretation and code generation has a strong influence on the overall implementation. Use interpretation when changes without recompilation are needed. Combinations of both are possible as well.
 ID-46
 ##Control manually written code 
-description
+If developers are expected to write code which integrates or extends generated code, try to provide checks against the code base, to inform developers early on any violations.
 ID-47
 ##Care about generated code 
-description
+Care about the quality of generated code. Developers may have to read, understand and integrate with generated code. However, if solutions with 100% code generation are used this practice does not apply, as nobody will ever see the code.
 ID-48
 ##Make code true to the model 
-description
+Make sure manually written code does not corrupt constraints on model level. Do so by either generating code that simple does not allow corruption, or apply constraint checkers on manually written code.
 ID-49
-##Viewpoint aware processing 
-description
+##Viewpoint-aware processing 
+Similar to viewpoint orientation in design and analysis, viewpoint-aware processing of models helps to structure and reduce complexity of generators.
 ID-50
 ##Care about templates 
-description
+Code generation templates may be a core asset of your DSM-solution. Try to structure and modularize templates to reduce generator complexity. Tip: Indent your templates in a way that makes sense for the template, not for the generated code. 
 ID-56
 ##Effective Generators 
-description
+Effective implementation of code generators provide the foundation of sustainable DSM solution.
 ID-66
-##Avoid semiautomatic transformation 
-description
+##Avoid semi-automatic transformation 
+Semi-automatic transformations burden maintenance tasks. Strive for full transformations.
 ID-82
 ##Mapping grammars to recursive-descent reco 
 description

@@ -1456,6 +1456,321 @@ Implementation
 </div>
 
 <div class="row">
+<div class="bp-content" id="44">
+ <h2 class="bp-title">Check constraints first</h2>
+<p class="bp-description"> Model validation will check constraints and report errors for violations. Try to check any inconsistencies in your model or input language as early as possible and treat errors as first class citizens. </p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-2>[2] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="68">
+ <h2 class="bp-title">Avoid debugging at source-code-level</h2>
+<p class="bp-description"> Provide debugging support on the model-level. Especially when the gap between code and models is big. Better to highlight and callback symbols in the model.</p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-7>[7] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="111">
+ <h2 class="bp-title">Target-Specific Generator Classes</h2>
+<p class="bp-description"> This pattern describes a class library whose sole purpose is to represent and generate output constructs in a particular language.</p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-10>[10] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="183">
+ <h2 class="bp-title">Turn DSM models into documentation</h2>
+<p class="bp-description"> In DSM the models itself form the best documentation of a system and DSM tooling provides the means to browse, query, and view models. However, not all stakeholders may have access to these resources and some users prefer to read documentation in traditional styles (e.g. paper, Word documents, or web-based documentation systems). With a DSM solution at hand it is fairly easy to turn models into various types of documentation, make use of it.</p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-11>[11] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="184">
+ <h2 class="bp-title">Integrate handwritten code on file level</h2>
+<p class="bp-description"> If necessary integrate handwritten code on file levels. In the simplest cases, the generator then can output include or import statements in the generated code.</p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-11>[11] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="185">
+ <h2 class="bp-title">Use autobuild for DSM models</h2>
+<p class="bp-description"> Automatically build models of your DSM solution and fully integrate generated output into the target application. If this process is not automated, developers have to do it manually, leads to errors and application which are not as often started and tested as they could.</p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-11>[11] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="189">
+ <h2 class="bp-title">Parallel generators per programming language</h2>
+<p class="bp-description"> Provide generators per target programming language. If the same application needs to be generated in different programming languages, not only syntax of the target language but as well distribution over files and components may differ. Therefore, do not mix output languages within generators.</p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-11>[11] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="191">
+ <h2 class="bp-title">One version for all</h2>
+<p class="bp-description"> Distribute and version your DSM solution as a whole. Therefore, generators, language and framework should provide the same version information.</p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-11>[11] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="193">
+ <h2 class="bp-title">Do not build generators to soon</h2>
+<p class="bp-description"> Do not try to build generators too soon. Wait until you have a modeling language, and example model, and the correct output to be generated from that. This practice may contradict/interfer with the need to <a href="198">create proof of concepts to show benefits </a> </p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-11>[11] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="114">
+ <h2 class="bp-title">Generate all documents</h2>
+<p class="bp-description"> While we cannot force people to actually write good documentation or comprehensive tests, there is at least little excuse for not doing so. With a DSM solution at hand try to generate all documents needed (e.g. documentation templates, stubs for testing). </p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-12>[12] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="122">
+ <h2 class="bp-title">Stabilize design quickly</h2>
+<p class="bp-description"> Stabilize designs quickly and early; “simple” changes in modeling or generative steps can cause large amounts of downstream rework. However, others advice to apply an <a href=75>Iterative development</a> process.</p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-14>[14] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="119">
+ <h2 class="bp-title">Modularize transformations</h2>
+<p class="bp-description"> Use intermediate models with multiple, modularized transform operations rather than writing large,complex tranformations. </p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-14>[14] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="120">
+ <h2 class="bp-title">Consistent input to transformations</h2>
+<p class="bp-description"> Avoid having separate model-dependent inputs to the transformations. Instead, incorporate feedback from the generator development into the modeling process.</p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-14>[14] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="42">
+ <h2 class="bp-title">Interpretation vs. code generation</h2>
+<p class="bp-description"> Clearly deciding between interpretation and code generation has a strong influence on the overall implementation. Use interpretation when changes without recompilation are needed. Combinations of both are possible as well.</p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-2>[2] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="46">
+ <h2 class="bp-title">Control manually written code</h2>
+<p class="bp-description"> If developers are expected to write code which integrates or extends generated code, try to provide checks against the code base, to inform developers early on any violations.</p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-2>[2] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="47">
+ <h2 class="bp-title">Care about generated code</h2>
+<p class="bp-description"> Care about the quality of generated code. Developers may have to read, understand and integrate with generated code. However, if solutions with 100% code generation are used this practice does not apply, as nobody will ever see the code.</p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-2>[2] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="48">
+ <h2 class="bp-title">Make code true to the model</h2>
+<p class="bp-description"> Make sure manually written code does not corrupt constraints on model level. Do so by either generating code that simple does not allow corruption, or apply constraint checkers on manually written code.</p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-2>[2] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="49">
+ <h2 class="bp-title">Viewpoint-aware processing</h2>
+<p class="bp-description"> Similar to viewpoint orientation in design and analysis, viewpoint-aware processing of models helps to structure and reduce complexity of generators.</p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-2>[2] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="50">
+ <h2 class="bp-title">Care about templates</h2>
+<p class="bp-description"> Code generation templates may be a core asset of your DSM-solution. Try to structure and modularize templates to reduce generator complexity. Tip: Indent your templates in a way that makes sense for the template, not for the generated code. </p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-2>[2] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="56">
+ <h2 class="bp-title">Effective Generators</h2>
+<p class="bp-description"> Effective implementation of code generators provide the foundation of sustainable DSM solution.</p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-3>[3] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="66">
+ <h2 class="bp-title">Avoid semi-automatic transformation</h2>
+<p class="bp-description"> Semi-automatic transformations burden maintenance tasks. Strive for full transformations.</p>
+<div class="bp-info">
+<div class="bp-references">
+<p>Reported by: <a href=#ref-7>[7] </a></p>
+</div>
+<div class="bp-category bp-Implementation">
+Implementation
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
 <div class="bp-content" id="138">
  <h2 class="bp-title">Define cost-benefit of generator testing</h2>
 <p class="bp-description"> Different testing strategies for generators may substantially vary in effort. Make sure to provide test strategies which provide a good cost-benefit ratio. Try to use different testing strategies depending on your testing goals.</p>
