@@ -1,0 +1,2235 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="img/fav.png">
+	<!-- Author Meta -->
+	<meta name="author" content="Michael Moser">
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="best practices in domain specific modeling">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>BP4DSM</title>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+	 crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,500,600,900" rel="stylesheet">
+	<!--
+		CSS
+		============================================= -->
+	<link rel="stylesheet" href="css/linearicons.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/nice-select.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+	<div class="main-wrapper-first relative">
+		<header>
+			<div class="container">
+				<div class="header-wrap">
+					<div class="header-top d-flex justify-content-between align-items-center">
+						<div class="logo">
+							<!-- <a href="index.html"><img src="img/logo.png" alt=""></a> -->
+						</div>
+						<div class="main-menubar d-flex align-items-center">
+							<nav class="hide">
+								<a href="index.html">Home</a>
+								<a href="#best-practices">Best Practices</a>
+								<a href="#references">References</a>
+							</nav>
+							<div class="menu-bar">
+								<span class="lnr lnr-menu"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="banner-area">
+			<div class="container">
+				<div class="row justify-content-center height align-items-center">
+					<div class="col-lg-8">
+						<div class="banner-content text-center">
+							<h1 class="text-uppercase">Best Practices in
+								<br> Domain Specific Modeling</h1>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Start Blog Area -->
+		<div class="blog-area">
+			<div class="container">
+				<div class="single-blog">
+					<div class="desc">
+						<h2>Best Practices in DSM</h2>
+						<p>This page lists best practices for the development of domain specific modeling solutions. All practices listed are
+							collected from scientic research papers in the field of domain specific modeling and domain specific languages. The
+							systematic mapping of literature is documented in our
+							<a target="_blank" rel="noopener noreferrer" href="./resources/preprint.pdf">research paper</a>.</p>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Start Feature Area -->
+		<section class="featured-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="single-feature d-flex flex-wrap justify-content-between">
+							<div class="icon">
+								<i class="fas fa-clipboard-list" style="font-size: 50px; color: white !important; padding: 15px;"></i>
+							</div>
+							<div class="desc">
+								<h4>Requirements Gathering and Analysis</h4>
+								<p>Best practices which provide advice on how gather requirements for domain specific modeling solutions and how to
+									analyse targeted application domains.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="single-feature d-flex flex-wrap justify-content-between">
+							<div class="icon">
+								<i class="fas fa-pencil-alt" style="font-size: 50px; color: white !important; padding: 15px;"></i>
+								<!-- <img class="icon-design" src="img/bp_design.svg" alt="">  -->
+							</div>
+							<div class="desc">
+								<h4>Design</h4>
+								<p>Best practices which facilitate the design of a domain specific modeling language.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="single-feature d-flex flex-wrap justify-content-between">
+							<div class="icon">
+
+								<i class="fas fa-cogs" style="font-size: 50px; color: white !important; padding: 15px;"></i>
+								<!-- <img src="img/f2.png" alt=""> -->
+							</div>
+							<div class="desc">
+								<h4>Implementation</h4>
+								<p>Best practices which provide advice on how to implementation domain specific modeling solution.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="single-feature d-flex flex-wrap justify-content-between">
+							<div class="icon">
+								<i class="fas fa-wrench" style="font-size: 50px; color: white !important; padding: 15px;"></i>
+							</div>
+							<div class="desc">
+								<h4>Process</h4>
+								<p>Best Practices which turn towards development process and social aspects in the development of a DSM-solution.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Feature Area -->
+		<!-- Start Amazing Works Area -->
+	</div>
+	<div class="main-wrapper">
+		<!-- Generated start --><section class="bp-area">
+<div class="container">
+<div class="row">
+<div class="bp-content" id="2">
+ <h2 class="bp-title">Define domain scope</h2>
+<p class="bp-description"> Define the appropriate domain scope of your solution. The scope of a DSM solution should be closley alined with business needs.</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[3] </a><a href=#>[6] </a><a href=#>[11] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="3">
+ <h2 class="bp-title">Identify DSL usage</h2>
+<p class="bp-description"> The early identification of language usage will have strong influence on language concepts. Precisly identify and describe usage of a domain specific language. Usages of a DSL in real world production scenarios are an important source of knowledge to support decisions in language design and implementation. </p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[1] </a><a href=#>[5] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="135">
+ <h2 class="bp-title">Use end-user personas</h2>
+<p class="bp-description"> The specification of needs of end-users in form of personas helps to reduce the distance to potential end-users. The use of personas are  a good mean to keep focused on the professional requirements and tasks of end-users not only during analysis phase but throughout the whole dsm project.</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[16] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="134">
+ <h2 class="bp-title">Perform expert review</h2>
+<p class="bp-description"> Ask usability experts for advice and apply heuristic review evaluation. In a heuristic evaluation, usability experts review interaction with the language and tooling and compare it to accepted usability principles.</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[16] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="79">
+ <h2 class="bp-title">Do not overestimate domain experts</h2>
+<p class="bp-description"> Do not expect the domain experts to know what the computer can (should) do for them; do not expect them to understand what it cannot possibly do for them! DSL designers need to aquire domain expertise by themselve.</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[5] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="4">
+ <h2 class="bp-title">Understand present solution</h2>
+<p class="bp-description"> Understand the design of the present solution. This will allow to focus on the needed scope of a language and helps to mitigate the risk to over-design languages.</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[5] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="6">
+ <h2 class="bp-title">Balance genericity and specialization</h2>
+<p class="bp-description"> Find the right balance between genericity and specialization. Developers often create a language that is too generic. A generic language design and language concepts may facilitate reusability of a language and make it more robust to changing requirements. However, beware of reusing general purpose modeling languages. Adaptations for your special case will be necessary and your end-users must deal with complex language designs.</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[1] </a><a href=#>[2] </a><a href=#>[2] </a><a href=#>[2] </a><a href=#>[5] </a><a href=#>[7] </a><a href=#>[7] </a><a href=#>[7] </a><a href=#>[14] </a><a href=#>[15] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="5">
+ <h2 class="bp-title">Reuse language definitions</h2>
+<p class="bp-description"> If suitable language exists try to reuse the language, do not reinvent the wheel! Sometimes existing language definitions can also be a goood starting point. Most of the time is better to take what is already their than creating one from scratch.</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[4] </a><a href=#>[4] </a><a href=#>[1] </a><a href=#>[2] </a><a href=#>[2] </a><a href=#>[7] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="7">
+ <h2 class="bp-title">Adopt existing domain notations</h2>
+<p class="bp-description"> An curical step during requirment analysis is to learn how domain experts articulate and present problem and solution domain. Adopt exisiting notations (e.g. from domain experts, software, documentation). Inventing a new concrete syntax will raise the threshold for domain experts to pick up your language.</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[4] </a><a href=#>[1] </a><a href=#>[2] </a><a href=#>[5] </a><a href=#>[11] </a><a href=#>[15] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="9">
+ <h2 class="bp-title">Support model reuse on language level</h2>
+<p class="bp-description"> Provide mechanisms that support reuse of models on language level. References between models, modularization or library concepts are a good starting point.</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[1] </a><a href=#>[1] </a><a href=#>[7] </a><a href=#>[11] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="8">
+ <h2 class="bp-title">Design must have purpose</h2>
+<p class="bp-description"> All features of a language should support a purpose. The purpose of the language must be closely aligned with buisness needs.</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[3] </a><a href=#>[1] </a><a href=#>[5] </a><a href=#>[18] </a><a href=#>[18] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="16">
+ <h2 class="bp-title">Design for language evolution</h2>
+<p class="bp-description"> It is thus essential to allow extending the language at any time. Compilation to a target language like Java from a DSL and to generate end-user support for Utilize tool support to facilitate model evolution. Define what a “compatible” model change is and ensure all dependent designs follow this same model. Evolution. Need for language evolution. Minimize DSL changes which break existing models. Proactively manage language evolution. Do not postpone addition and extension of language concepts.</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[2] </a><a href=#>[7] </a><a href=#>[8] </a><a href=#>[14] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="10">
+ <h2 class="bp-title">Carefully choose form of notation</h2>
+<p class="bp-description"> Often the choice for a certain type of notation (e.g. textual, graphical, tabular) is pretermined by experiences and expectations of different stackholders. E.g. software engineers may favor a textual notation, or engineers in industrial automation expect graphical notations to create models. These decisions are often biased and should be questioned.</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[1] </a><a href=#>[2] </a><a href=#>[7] </a><a href=#>[11] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="13">
+ <h2 class="bp-title">Avoid redundancy</h2>
+<p class="bp-description"> Avoid redundancy on a conceptual level. Redundancy is a constant source of problem. Having several concepts at hand gives users the possibility to create different models to describe the same fact.</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[6] </a><a href=#>[1] </a><a href=#>[18] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="15">
+ <h2 class="bp-title">Viewpoint orientation</h2>
+<p class="bp-description"> Identify different viewpoints on a software system. This may influence hwo you modularize a DSL. Different concerns of stakeholders can be seperated by using a viewpoint oriented approach. Moreover, the identified viewpoints can help to structure implementation. See <a href=#49>viewpoint aware processing</a>.</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[3] </a><a href=#>[2] </a><a href=#>[11] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="28">
+ <h2 class="bp-title">Provide Integrability</h2>
+<p class="bp-description"> Ensure that the DSL and associated tooling can be integrated with existing frameworks and languages. Choose integrability over extensibility. If possible, it is best to provide integration mechanisms on model level (e.g. base integration on metamodel).</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[6] </a><a href=#>[11] </a><a href=#>[11] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="14">
+ <h2 class="bp-title">Make elements distinquishable</h2>
+<p class="bp-description"> In graphical languages different elements should exhibit enough syntactic differences. There are more possibilities than changing the color of elements (e.g. shape, behavior, docking).</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[1] </a><a href=#>[7] </a><a href=#>[11] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="22">
+ <h2 class="bp-title">Consistent style everywhere</h2>
+<p class="bp-description"> Be consitent on language elements. In graphical languages a consitent use of color, icons, shapes, or connectability has a huge impact on usability of a language.</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[1] </a><a href=#>[11] </a><a href=#>[11] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="18">
+ <h2 class="bp-title">Limit nr. of language elements</h2>
+<p class="bp-description"> Languages with hundreds of different language elements are hard to read, comprehend and to use. Try to avoid this by creating new sub-languages providing functionality via library mechanisms.</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[1] </a><a href=#>[8] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="171">
+ <h2 class="bp-title">Support variability on language level</h2>
+<p class="bp-description"> Drive your language design by focusing on variabilities. Provide mechanisms which handle variability on language level. Rather that having seperate elements for representing variants, core language concepts should be designed to handle variabilities.</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[11] </a><a href=#>[11] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="11">
+ <h2 class="bp-title">Reuse type systems</h2>
+<p class="bp-description"> Designing a type system can be hard. Therefore, if possible reuse existing type system semantic. This not only eases language design but to asure comprehensibility and avoid errors. An unconventional type system may be hard to adpot for users which have been exposed to conventional type system in other languages.</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[4] </a><a href=#>[1] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="12">
+ <h2 class="bp-title">Keep it simple</h2>
+<p class="bp-description"> Keep a language simple. A language should be as simple as possible in order to express the concepts of interest and to support its users and stakeholders in their preferred ways of working. So again, keep it simple!</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[6] </a><a href=#>[1] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="73">
+ <h2 class="bp-title">Effective process for DSML definition</h2>
+<p class="bp-description"> Use well established practices to provide an effective DSML definition process. </p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[3] </a><a href=#>[4] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="30">
+ <h2 class="bp-title">Care for quality</h2>
+<p class="bp-description"> Care for quality on all levels. Quality of the provided language, DSML tool support and the target systems which built using your DSM solution.</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[6] </a><a href=#>[11] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="136">
+ <h2 class="bp-title">Perform for usability evaluations</h2>
+<p class="bp-description"> Usability evaluations provide valuable feedback for the design of both the notation as well as the tool interaction. Usability evaluations during early project phases provide have a strong influence on the design of a language. Use techniques like paper prototypes to perform evaluations if no runnable software is availabel.</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[16] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="172">
+ <h2 class="bp-title">Create guidelines for language design</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[11] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="173">
+ <h2 class="bp-title">Define language rules</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[11] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="165">
+ <h2 class="bp-title">Derive concepts from physical sturcture</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[11] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="166">
+ <h2 class="bp-title">Derive concepts from Look\&Feel</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[11] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="199">
+ <h2 class="bp-title">First things first - the language</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[11] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="168">
+ <h2 class="bp-title">Derive concepts from  domain</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[11] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="169">
+ <h2 class="bp-title">Derive concepts from expected output</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[11] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="170">
+ <h2 class="bp-title">Reuse existing computational model</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[11] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="21">
+ <h2 class="bp-title">Balance compactness and understandability</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[1] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="23">
+ <h2 class="bp-title">Interface concept</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[1] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="124">
+ <h2 class="bp-title">Precise high-level abstraction</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[14] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="125">
+ <h2 class="bp-title">Detect recurring patterns in design</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[14] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="17">
+ <h2 class="bp-title">Compose existing languages</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[1] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="126">
+ <h2 class="bp-title">Provide sufficient level of detail</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[15] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="127">
+ <h2 class="bp-title">Multiple levels of abstractions</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[15] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="128">
+ <h2 class="bp-title">Clear language to target mapping</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[15] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="25">
+ <h2 class="bp-title">Turn API into DSL</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[4] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="26">
+ <h2 class="bp-title">Strive for 80\% solution</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[5] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="29">
+ <h2 class="bp-title">Care for longevity</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[6] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="31">
+ <h2 class="bp-title">Care for scalabiltiy</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[6] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="32">
+ <h2 class="bp-title">Care for usability</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[6] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="34">
+ <h2 class="bp-title">Beware of misplaced emphasis</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[7] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="33">
+ <h2 class="bp-title">A library is not the language</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[7] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="175">
+ <h2 class="bp-title">Filter details from notational elements</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[11] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="177">
+ <h2 class="bp-title">Use colors</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[11] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="178">
+ <h2 class="bp-title">Use transparency containments</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[11] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="179">
+ <h2 class="bp-title">Derive notation from corporate identity</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[11] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="180">
+ <h2 class="bp-title">Ask graphic designers for help</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[11] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="19">
+ <h2 class="bp-title">Use descriptive notations</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[1] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="20">
+ <h2 class="bp-title">Usage of syntactic sugar</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[1] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="24">
+ <h2 class="bp-title">Transform visual to text</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[4] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="27">
+ <h2 class="bp-title">Use mixtuer of language notations</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[5] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="35">
+ <h2 class="bp-title">Importance of meta-tooling</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[3] </a><a href=#>[4] </a><a href=#>[2] </a><a href=#>[7] </a><a href=#>[11] </a><a href=#>[12] </a><a href=#>[15] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="36">
+ <h2 class="bp-title">Importance of DSL-tooling</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[3] </a><a href=#>[6] </a><a href=#>[2] </a><a href=#>[11] </a><a href=#>[12] </a><a href=#>[14] </a><a href=#>[14] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="186">
+ <h2 class="bp-title">Use generators of varing granularity</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[11] </a><a href=#>[11] </a><a href=#>[11] </a><a href=#>[11] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="72">
+ <h2 class="bp-title">Incremental development</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[2] </a><a href=#>[2] </a><a href=#>[7] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="37">
+ <h2 class="bp-title">Partition your meta-model</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[3] </a><a href=#>[2] </a><a href=#>[12] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="45">
+ <h2 class="bp-title">Don't modify generated code</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[2] </a><a href=#>[14] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="51">
+ <h2 class="bp-title">Simplify generators</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[2] </a><a href=#>[11] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="59">
+ <h2 class="bp-title">Use source-source transformation</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[4] </a><a href=#>[9] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="58">
+ <h2 class="bp-title">Restrict host language by specialization</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[4] </a><a href=#>[9] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="61">
+ <h2 class="bp-title">DSL preprocessing</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[4] </a><a href=#>[9] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="62">
+ <h2 class="bp-title">System front-end DSL for configuration</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[4] </a><a href=#>[9] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="63">
+ <h2 class="bp-title">Pipeline DSL processors</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[4] </a><a href=#>[9] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="204">
+ <h2 class="bp-title">Provide meta-metamodel</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[11] </a><a href=#>[15] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="131">
+ <h2 class="bp-title">Use constraint language in Meta-modeling</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[15] </a><a href=#>[18] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="198">
+ <h2 class="bp-title">Create proof of concepts to show benefits</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[11] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="200">
+ <h2 class="bp-title">Follow inhouse standards</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[11] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="55">
+ <h2 class="bp-title">Document your code</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[2] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="78">
+ <h2 class="bp-title">Plan DSL usage reviews</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[2] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="65">
+ <h2 class="bp-title">Identify DSL usage process</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[7] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="195">
+ <h2 class="bp-title">Move duplicated code to domain framework</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[11] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="196">
+ <h2 class="bp-title">Provide good API for generated code</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[11] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="43">
+ <h2 class="bp-title">Domain specific frameworks</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[2] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="64">
+ <h2 class="bp-title">Hide complexity in domain framework</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[5] </a><a href=#>[11] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="176">
+ <h2 class="bp-title">Provide user modes</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[11] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="38">
+ <h2 class="bp-title">Identify usage convention</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[1] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="41">
+ <h2 class="bp-title">Teamwork support</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[2] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="44">
+ <h2 class="bp-title">Check constraints first</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[2] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="68">
+ <h2 class="bp-title">Avoid debugging at source-code-level</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[7] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="111">
+ <h2 class="bp-title">Target-Specific Generator Classes</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[10] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="183">
+ <h2 class="bp-title">Turn DSM models into documenation</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[11] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="184">
+ <h2 class="bp-title">Integrate handwritten code on file level</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[11] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="185">
+ <h2 class="bp-title">Use autobuild for DSM models</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[11] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="189">
+ <h2 class="bp-title">Parallel generators per prog. langugage</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[11] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="191">
+ <h2 class="bp-title">One version for all</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[11] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="193">
+ <h2 class="bp-title">Do not build generator to soon</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[11] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="114">
+ <h2 class="bp-title">Generate all documents</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[12] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="122">
+ <h2 class="bp-title">Stabilize design quickly</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[14] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="119">
+ <h2 class="bp-title">Modularize transformations</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[14] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="120">
+ <h2 class="bp-title">Consistent input to transformations</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[14] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="42">
+ <h2 class="bp-title">Interpretation vs. code generation</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[2] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="46">
+ <h2 class="bp-title">Control manually written code</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[2] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="47">
+ <h2 class="bp-title">Care about generated code</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[2] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="48">
+ <h2 class="bp-title">Make code true to the model</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[2] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="49">
+ <h2 class="bp-title">Viewpoint aware processing</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[2] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="50">
+ <h2 class="bp-title">Care about templates</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[2] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="56">
+ <h2 class="bp-title">Effective Generators</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[3] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="66">
+ <h2 class="bp-title">Avoid semiautomatic transformation</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[7] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="82">
+ <h2 class="bp-title">Mapping grammars to recursive-descent reco</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[10] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="90">
+ <h2 class="bp-title">Normalized Heterogeneous AST</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[10] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="91">
+ <h2 class="bp-title">Irregular Heterogeneous AST</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[10] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="92">
+ <h2 class="bp-title">Embedded Heterogeneous Tree Walker</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[10] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="93">
+ <h2 class="bp-title">External Tree Visitor</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[10] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="94">
+ <h2 class="bp-title">Tree Grammar</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[10] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="95">
+ <h2 class="bp-title">Tree Pattern Matcher</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[10] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="96">
+ <h2 class="bp-title">Symbol Table for Monolithic Scope</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[10] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="97">
+ <h2 class="bp-title">Symbol Table for Nested Scopes</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[10] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="98">
+ <h2 class="bp-title">Symbol Table for Data Aggregates</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[10] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="99">
+ <h2 class="bp-title">Symbol Table for Classes</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[10] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="83">
+ <h2 class="bp-title">LL(1) Recursive-Descent Lexer</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[10] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="100">
+ <h2 class="bp-title">Computing Static Expression Types</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[10] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="101">
+ <h2 class="bp-title">Automatic Type Promotion</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[10] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="102">
+ <h2 class="bp-title">Enforcing Static Type Safety</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[10] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="103">
+ <h2 class="bp-title">Enforcing Polymorphic Type Safety</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[10] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="104">
+ <h2 class="bp-title">Syntax-Directed Interpreter</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[10] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="105">
+ <h2 class="bp-title">Tree-Based Interpreter</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[10] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="106">
+ <h2 class="bp-title">Bytecode Assembler</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[10] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="107">
+ <h2 class="bp-title">Stack-Based Bytecode Interpreter</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[10] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="108">
+ <h2 class="bp-title">Register-Based Bytecode Interpreter</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[10] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="109">
+ <h2 class="bp-title">Syntax-Directed Translator</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[10] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="84">
+ <h2 class="bp-title">LL(1) Recursive-Descent Parser</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[10] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="110">
+ <h2 class="bp-title">Rule-Based Translator</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[10] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="85">
+ <h2 class="bp-title">Backtracking Parser</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[10] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="86">
+ <h2 class="bp-title">Memoizing Parser</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[10] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="87">
+ <h2 class="bp-title">Predicated Parser</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[10] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="88">
+ <h2 class="bp-title">Parse Tree</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[10] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="89">
+ <h2 class="bp-title">Homogeneous AST</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[10] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="205">
+ <h2 class="bp-title">Reuse mechanisms in metamodel</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[11] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="206">
+ <h2 class="bp-title">Model sharing and splitting mechanisms</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[11] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="207">
+ <h2 class="bp-title">Version your models</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[11] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="112">
+ <h2 class="bp-title">Use DSL to enforce standards</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[12] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="39">
+ <h2 class="bp-title">Syntax alignment of concepts</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[1] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="145">
+ <h2 class="bp-title">Sematic Model</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[13] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="154">
+ <h2 class="bp-title">Regex Table Lexer</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[13] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="155">
+ <h2 class="bp-title">Recursive Descent Parser</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[13] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="156">
+ <h2 class="bp-title">Parser Combinator</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[13] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="157">
+ <h2 class="bp-title">Parser Generator</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[13] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="158">
+ <h2 class="bp-title">Tree Construction</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[13] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="159">
+ <h2 class="bp-title">Parser Embedded Translation</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[13] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="160">
+ <h2 class="bp-title">Parser Embedded Interpretation</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[13] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="161">
+ <h2 class="bp-title">Foreign Code</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[13] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="162">
+ <h2 class="bp-title">Alternative Tokenization</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[13] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="163">
+ <h2 class="bp-title">Nested operator expression</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[13] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="146">
+ <h2 class="bp-title">Symbol Table</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[13] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="164">
+ <h2 class="bp-title">Newline Separators</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[13] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="147">
+ <h2 class="bp-title">Context Variable</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[13] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="148">
+ <h2 class="bp-title">Construction Builder</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[13] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="149">
+ <h2 class="bp-title">Macro: Transform input text</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[13] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="150">
+ <h2 class="bp-title">Notification for meta-model</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[13] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="151">
+ <h2 class="bp-title">Delimiter-Directed Translation</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[13] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="152">
+ <h2 class="bp-title">Syntax-Directed Translation</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[13] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="153">
+ <h2 class="bp-title">Formally define the syntax of your languag</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[13] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="141">
+ <h2 class="bp-title">Atomic concept pattern</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[17] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="142">
+ <h2 class="bp-title">Entitype pattern</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[17] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="143">
+ <h2 class="bp-title">Deep configuration pattern</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[17] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="144">
+ <h2 class="bp-title">Concept tailoring pattern</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[17] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="52">
+ <h2 class="bp-title">Allow for adaptation</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[2] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="53">
+ <h2 class="bp-title">Create annotation models</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[2] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="54">
+ <h2 class="bp-title">Test your DSL</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[2] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="57">
+ <h2 class="bp-title">Base implementation on usage</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[4] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="60">
+ <h2 class="bp-title">Data-structure representation</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[4] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="67">
+ <h2 class="bp-title">Avoid enforcing validation rules</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[7] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="81">
+ <h2 class="bp-title">Separate language model from validation</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[8] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="81">
+ <h2 class="bp-title">Separate language model from validation</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[9] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="40">
+ <h2 class="bp-title">Syntax agnostic layouts</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[1] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="132">
+ <h2 class="bp-title">Instance representation for meta-models</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[15] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="130">
+ <h2 class="bp-title">Common graphical notation for meta-tooling</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[15] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="74">
+ <h2 class="bp-title">Provide training</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[7] </a><a href=#>[11] </a><a href=#>[12] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="77">
+ <h2 class="bp-title">Understand and deal with your weaknesses</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[5] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="80">
+ <h2 class="bp-title">Users do not overlook your mistakes</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[5] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="182">
+ <h2 class="bp-title">Use tooling for model evolution</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[11] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="201">
+ <h2 class="bp-title">Plan for evolution</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[11] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="123">
+ <h2 class="bp-title">Expect redesign and plan</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[14] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="71">
+ <h2 class="bp-title">Domain engineering team</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[3] </a><a href=#>[3] </a><a href=#>[2] </a><a href=#>[5] </a><a href=#>[14] </a><a href=#>[16] </a><a href=#>[16] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="75">
+ <h2 class="bp-title">Iterative development</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[2] </a><a href=#>[8] </a><a href=#>[14] </a><a href=#>[16] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="197">
+ <h2 class="bp-title">DSM requires organization</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[11] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="76">
+ <h2 class="bp-title">Treat DSM as product development</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[2] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="69">
+ <h2 class="bp-title">Aquire language development expertise</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[3] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="70">
+ <h2 class="bp-title">Fit technology transfer to business model</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[5] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="138">
+ <h2 class="bp-title">Define cost-benefit of generator testing</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[19] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="139">
+ <h2 class="bp-title">Use fuzzy testing</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[19] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="140">
+ <h2 class="bp-title">Measure test coverage</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[19] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="bp-content" id="137">
+ <h2 class="bp-title">Create DSLs for testing DSLs</h2>
+<p class="bp-description"> description</p>
+<div class="bp-references">
+<p>Reported by: <a href=#>[19] </a><a href=#> </a></p>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+	<!-- Generated end -->
+
+		<section class="reference-area" id="references">
+
+				<h2>References</h2>
+			<div class="container">
+				<div class="row">
+					<div class="reference" id="ref-1">
+						<div class="reference-id">[1]</div>
+						<div class="reference-content">
+							S. Livengood, “Experiences in domain-specific modeling for interface specification and development,” in Proceedings of the
+							2Nd International Master Class on Model-Driven Engineering: Modeling Wizards, ser. MW ’12. New York, NY, USA: ACM,
+							2012, pp. 4:1–4:2.</div>
+					</div>
+
+					<div class="reference" id="ref-2">
+						<div class="reference-id">[2]</div>
+						<div class="reference-content">
+							J. Iber, A. Holler, T. Rauter, and C. Kreiner, “Patterns ¨ for designing configurability into domain-specific language elements,”
+							in Proceedings of the 21st European Conference on Pattern Languages of Programs, ser. EuroPlop ’16. New York, NY,
+							USA: ACM, 2016, pp. 1:1–1:14.
+						</div>
+					</div>
+
+					<div class="reference" id="ref-3">
+						<div class="reference-id">[3]</div>
+						<div class="reference-content">
+							A. Kahlaoui, A. Abran, and E. Lefebvre, “Dsml success factors and their assessment criteria,” Metrics News, vol. 13, no.
+							1, pp. 43–51, 2008.</div>
+					</div>
+
+
+					<div class="reference" id="ref-4">
+						<div class="reference-id">[4]</div>
+						<div class="reference-content"> M. Mernik, J. Heering, and A. M. Sloane, “When and how to develop domain-specific languages,” ACM Comput. Surv., vol.
+							37, no. 4, pp. 316–344, dec 2005.</div>
+					</div>
+
+
+					<div class="reference" id="ref-5">
+						<div class="reference-id">[5]</div>
+						<div class="reference-content"> D. S. Kolovos, R. F. Paige, T. Kelly, and F. A. Polack, “Requirements for domain-specific languages,” in Proc. of ECOOP
+							Workshop on Domain-Specific Program Development (DSPD), vol. 2006, 2006.</div>
+					</div>
+
+					<div class="reference" id="ref-6">
+						<div class="reference-id">[6]</div>
+						<div class="reference-content"> D. Spinellis, “Notable design patterns for domain-specific languages,” J. Syst. Softw., vol. 56, no. 1, pp. 91–99,
+							Feb. 2001.</div>
+					</div>
+
+					<div class="reference" id="ref-7">
+						<div class="reference-id">[7]</div>
+						<div class="reference-content"> G. Karsai, H. Krahn, C. Pinkernell, B. Rumpe, M. Schneider, and S. Volkel, “Design guidelines for domain specific ¨
+							languages,” in Proceedings of the 9th OOPSLA Workshop on Domain-Specific Modeling (DSM’09), M. Rossi, J. Sprinkle,
+							J. Gray, and J.-P. Tolvanen, Eds., 2009, pp. 7–13. </div>
+					</div>
+
+					<div class="reference" id="ref-8">
+
+						<div class="reference-id">[8]</div>
+						<div class="reference-content"> M. Volter, “Best Practices for DSLs and Model-Driven De- ¨ velopment,” Journal of Object Technology, vol. 8, no. 6,
+							pp. 79–102, Sep. 2009. </div>
+					</div>
+
+					<div class="reference" id="ref-9">
+						<div class="reference-id">[9]</div>
+						<div class="reference-content"> D. Wile, “Lessons learned from real dsl experiments,” in System Sciences, 2003. Proceedings of the 36th Annual Hawaii
+							International Conference on. IEEE, 2003, pp. 10–pp.
+						</div>
+					</div>
+				<div class="reference" id="ref-10">
+					<div class="reference-id">[10]</div>
+					<div class="reference-content">S. Kelly and R. Pohjonen, “Worst practices for domainspecific modeling,” IEEE software, vol. 26, no. 4, 2009.
+					</div>
+				</div>
+				<div class="reference" id="ref-11">
+					<div class="reference-id">[11]</div>
+					<div class="reference-content"> M. Vierhauser, R. Rabiser, P. Grunbacher, and A. Egyed, ¨ “Developing a dsl-based approach for event-based monitoring
+						of systems of systems: Experiences and lessons learned (e),” in 30th IEEE/ACM International Conference on Automated
+						Software Engineering, Lincoln, USA, 2015, pp. 715–725.
+					</div>
+				</div>
+				<div class="reference" id="ref-12">
+
+					<div class="reference-id">[12]</div>
+					<div class="reference-content"> T. Parr, Language Implementation Patterns: Create Your Own Domain-Specific and General Programming Languages, 1st ed.
+						Pragmatic Bookshelf, 2009.
+					</div>
+				</div>
+				<div class="reference" id="ref-13">
+					<div class="reference-id">[13]</div>
+					<div class="reference-content"> S. Kelly and J.-P. Tolvanen, Domain-Specific Modeling: Enabling Full Code Generation. Wiley, 2008.
+					</div>
+				</div>
+				<div class="reference" id="ref-14">
+					<div class="reference-id">[14]</div>
+					<div class="reference-content"> M. Voka´c and J. M. Glattetre, “Using a domain-specific ˇ language and custom tools to model a multi-tier serviceoriented
+						application — experiences and challenges,” in Model Driven Engineering Languages and Systems, L. Briand and C. Williams,
+						Eds. Berlin, Heidelberg: Springer Berlin Heidelberg, 2005, pp. 492–506.
+					</div>
+				</div>
+				<div class="reference" id="ref-15">
+					<div class="reference-id">[15]</div>
+					<div class="reference-content"> M. Fowler, Domain Specific Languages, 1st ed. AddisonWesley Professional, 2010.
+					</div>
+				</div>
+				<div class="reference" id="ref-16">
+					<div class="reference-id">[16]</div>
+					<div class="reference-content"> U. Frank, Domain-Specific Modeling Languages: Requirements Analysis and Design Guidelines. Berlin, Heidelberg: Springer
+						Berlin Heidelberg, 2013, pp. 133–157.
+					</div>
+				</div>
+				<div class="reference" id="ref-17">
+					<div class="reference-id">[17]</div>
+					<div class="reference-content"> M. Moser, M. Pfeiffer, and J. Pichler, “Domain-specific modeling in industrial automation: Challenges and experiences,”
+						in Proceedings of the 1st International Workshop on Modern Software Engineering Methods for Industrial Automation,
+						ser. MoSEMInA 2014. New York, NY, USA: ACM, 2014, pp. 42–51.
+					</div>
+				</div>
+				<div class="reference" id="ref-18">
+					<div class="reference-id">[18]</div>
+					<div class="reference-content"> P. Salehi, A. Hamou-Lhadj, M. Toeroe, and F. Khendek, “A uml-based domain specific modeling language for service availability
+						management,” Comput. Stand. Interfaces, vol. 44, no. C, pp. 63–83, Feb. 2016.
+					</div>
+				</div>
+				<div class="reference" id="ref-19">
+					<div class="reference-id">[19]</div>
+					<div class="reference-content">D. Ratiu and M. Volter, “Automated testing of dsl imple- ¨ mentations: Experiences from building mbeddr,” in Proceedings
+						of the 11th International Workshop on Automation of Software Test, ser. AST ’16. New York, NY, USA: ACM, 2016, pp.
+						15–21.
+					</div>
+				</div>
+			</div>
+	</div>
+
+	</section>
+
+	<!-- End Blog Area -->
+	<!-- Start Story Area -->
+	<!-- End Story Area -->
+	</div>
+
+
+	<!-- Start footer Area -->
+	<footer class="footer-area">
+		<div class="container">
+			<div class="footer-content d-flex flex-column align-items-center">
+				<div class="footer-menu">
+						<a href="index.html">Home</a>
+								<a href="#best-practices">Best Practices</a>
+								<a href="#references">References</a>
+				</div>
+				<div class="footer-social">
+					<a href="#">
+						<i class="fa fa-facebook"></i>
+					</a>
+					<a href="#">
+						<i class="fa fa-twitter"></i>
+					</a>
+					<a href="#">
+						<i class="fa fa-dribbble"></i>
+					</a>
+					<a href="#">
+						<i class="fa fa-behance"></i>
+					</a>
+				</div>
+				<div class="copy-right-text">Copyright &copy; 2018 All rights reserved | This template is made with
+					<i class="fa fa-heart"></i> by
+					<a href="https://colorlib.com">Colorlib</a>
+				</div>
+
+			</div>
+		</div>
+	</footer>
+	<!-- End footer Area -->
+	</div>
+
+
+
+
+	<script src="js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+	 crossorigin="anonymous"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/jquery.nice-select.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/main.js"></script>
+
+
+</body>
+
+</html>

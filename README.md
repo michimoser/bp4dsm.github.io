@@ -5,4 +5,4 @@ domain specific modeling.
 
 ## How to contribute
 
-Add and edit best practices in [a relative link](bestpractices.md)
+Add and edit best practices in [bestpractices.md](bestpractices.md). 
