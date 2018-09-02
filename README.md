@@ -5,4 +5,6 @@ domain specific modeling.
 
 ## How to contribute
 
-Add and edit best practices in [bestpractices.md](bestpractices.md). 
+Add and edit best practices in [bestpractices.md](bestpractices.md). Use the following structure to report results.
+
+
